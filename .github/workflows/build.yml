@@ -1,0 +1,9 @@
+name: build
+run-name: Build Massgate Server
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v4
+      - run: cmake -G "Visual Studio 14 2015" .
