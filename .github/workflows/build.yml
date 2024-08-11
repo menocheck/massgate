@@ -6,4 +6,4 @@ jobs:
     runs-on: windows-2019
     steps:
       - uses: actions/checkout@v4
-      - run: cmake -G "Visual Studio 14 2015" .
+      - run: cmake -G "Visual Studio 14 2015" -A Win32 -S . -B build
